@@ -29,5 +29,9 @@
     "pkg": "^5.2.1",
     "string-similarity": "^4.0.4",
     "yargs": "^17.0.1"
+  },
+  "bin": {
+    "node-shell-executor": "./bin/node-shell-executor",
+    "nse": "./bin/node-shell-executor"
   }
 }
