@@ -6,7 +6,7 @@ Are you want to create commands for your shell using Node.js instead of `bash` o
 
 - Automate everything you want without headache
 - You can use JavaScript (instead of confusing shell languages)
-- Your commands will work on every platform (Windows, Linux, MacOS). Write once, use everywhere!
+- Your commands will work on every platform (Windows, Linux, MacOS not tested). Write once, use everywhere!
 - You have the power of entire npm registry in your pocket
 - It's fun!
 
@@ -47,29 +47,28 @@ const printMessage = require('print-message');
 printMessage(['Hello, node-shell-executor!']);
 ```
 
-## 3. Update your commands list
-
-```
-npx nse update
-```
-
-This command will create executables for your `.js` files. You can check your command list using:
+You can check your command list using:
 
 ```
 npx nse list
 ```
 
-## 4. Run your command
+## 3. Create executables for your commands (optionally)
 
 ```
-npx nse run [command]
+npx nse update
 ```
 
-Or you can add your commands directory to your environment variables (e.g. `$PATH`) to run your commands directly from terminal:
+This command will create executables for your `.js` files. This way, if you add your commands directory to your environment variables (e.g. `$PATH` on Windows), you can run your commands directly from terminal without `npx nse` prefix:
 
 ```
 // in your terminal
 [command]
+```
+## 4. Run your command
+
+```
+npx nse run [command]
 ```
 
 Enjoy!
