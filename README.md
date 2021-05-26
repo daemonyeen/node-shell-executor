@@ -59,7 +59,7 @@ This command will create executables for your `.js` files. You can check your co
 npx nse list
 ```
 
-## 4. Run your commands
+## 4. Run your command
 
 ```
 npx nse run [command]
