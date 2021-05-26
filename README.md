@@ -59,7 +59,9 @@ npx nse list
 npx nse update
 ```
 
-This command will create executables for your `.js` files. This way, if you add your commands directory to your environment variables (e.g. `$PATH` on Windows), you can run your commands directly from terminal without `npx nse` prefix:
+This command will create executables for your `.js` files (`.bat` for Windows, `.sh` for Linux).
+
+This way, if you add your commands directory to your environment variables (e.g. `$PATH` on Windows), you can run your commands directly from terminal without `npx nse` prefix:
 
 ```
 // in your terminal
