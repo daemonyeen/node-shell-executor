@@ -1,4 +1,4 @@
-# node-shell-executor
+# node-shell-executor 🔥🔥🔥
 
 Are you want to create commands for your shell using Node.js instead of `bash` or `PowerShell`? This is package for you.
 
@@ -8,8 +8,9 @@ Are you want to create commands for your shell using Node.js instead of `bash` o
 - You can use JavaScript (instead of confusing shell languages)
 - Your commands will work on every platform (Windows, Linux, MacOS not tested). Write once, use everywhere!
 - You have the power of entire npm registry in your pocket
+- Use `$` and `shell` utils to create your own scripts!
 - It's fun!
-
+  
 ## 1. Install `node-shell-executor`:
 
 ```
@@ -53,7 +54,23 @@ You can check your command list using:
 npx nse list
 ```
 
-## 3. Create executables for your commands (optionally)
+## 3. Create scripts
+
+You can write your own scripts like any other JavaScript scripts in your command's directory.
+But if you want a convenient way to execute commands you can use `node-shell-executor` utils to do so:
+
+```
+const { $, shell } = require('node-shell-executor');
+
+shell(async () => {
+    await $`git --version`;
+    await $`node -v`;
+});
+```
+
+This example will execute `git --version` and `node -v` step by step!
+
+## 4. Create executables for your commands (optionally)
 
 ```
 npx nse update

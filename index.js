@@ -6,6 +6,8 @@ const update = require('./lib/commands/update');
 const list = require('./lib/commands/list');
 const run = require('./lib/commands/run');
 
+const shell = require('./lib/shell');
+
 yargs(hideBin(process.argv))
   .command(
     'update',
@@ -40,3 +42,7 @@ yargs(hideBin(process.argv))
       run(yargs.command);
     },
   ).argv;
+
+module.exports = {
+  ...shell,
+};
