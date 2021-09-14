@@ -18,19 +18,23 @@
     "windows",
     "cli"
   ],
-  "author": "Max Skolkov",
+  "author": "Maksim Meshcheryakov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/in5anity/node-shell-executor/issues"
   },
   "homepage": "https://github.com/in5anity/node-shell-executor#readme",
+  "bin": {
+    "node-shell-executor": "./bin/node-shell-executor",
+    "nse": "./bin/node-shell-executor"
+  },
   "dependencies": {
     "glob": "7.1.7",
     "string-similarity": "4.0.4",
     "yargs": "17.0.1"
   },
-  "bin": {
-    "node-shell-executor": "./bin/node-shell-executor",
-    "nse": "./bin/node-shell-executor"
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "prettier": "2.4.0"
   }
 }

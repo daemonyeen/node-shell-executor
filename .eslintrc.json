@@ -1,0 +1,47 @@
+{
+  "env": {
+    "browser": true,
+    "es2017": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "extends": ["eslint:recommended"],
+  "rules": {
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline"
+      }
+    ],
+    "linebreak-style": "off",
+    "no-multiple-empty-lines": "error",
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "next": "*",
+        "prev": ["const", "let"]
+      },
+      {
+        "blankLine": "always",
+        "next": "return",
+        "prev": "*"
+      },
+      {
+        "blankLine": "any",
+        "next": ["const", "let"],
+        "prev": ["const", "let"]
+      }
+    ],
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"]
+  }
+}
